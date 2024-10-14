@@ -1,0 +1,155 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.App {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #333;
+}
+
+.todo-input {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+input {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  flex-grow: 1;
+}
+
+button {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.todo-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  margin-bottom: 8px;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4px;
+}
+
+li.active {
+  border-left: 5px solid #4CAF50;
+}
+
+li.pending {
+  border-left: 5px solid #FFC107;
+}
+
+li.wip {
+  border-left: 5px solid #2196F3;
+}
+
+li.completed {
+  border-left: 5px solid #9E9E9E;
+}
+
+li button {
+  background-color: #f44336;
+  font-size: 14px;
+  padding: 6px 12px;
+}
+
+li button:hover {
+  background-color: #da190b;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  background-color: #ddd;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.tabs button.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.download-button {
+  margin-top: 20px;
+  background-color: #008CBA;
+}
+
+.download-button:hover {
+  background-color: #007B9A;
+}
+
+.todo-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-grow: 1;
+}
+
+.todo-details {
+  font-size: 12px;
+  color: #666;
+  margin-top: 4px;
+}
+
+.deadline, .assignee, .link {
+  margin-right: 10px;
+}
+
+.link a {
+  color: #1a0dab;
+  text-decoration: none;
+}
+
+.link a:hover {
+  text-decoration: underline;
+}
+
+.todo-actions {
+  display: flex;
+  gap: 10px;
+}
+
+select {
+  padding: 6px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
